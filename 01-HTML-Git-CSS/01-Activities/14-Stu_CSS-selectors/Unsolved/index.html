@@ -3,28 +3,40 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Pulls / links the style sheet located in assets folder which contains other codes-->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- Title of the Webpage-->
     <title>CSS Selectors</title>
   </head>
 
   <body>
     <header>
+      <!-- Creates the header for the Webpage -->
+      <!-- Will also create the header with specified height, width, line, text and background color -->
       <h1>Student Bio</h1>
     </header>
 
     <main>
       <section>
         <h2>About Me</h2>
+        <!-- Pulling the code from style.css; figure is 200px in width and color background #f0ead6-->
         <figure>
+          <!-- Creates the image 200px i width and height -->
           <img src="./assets/images/image-1.jpg" alt="placeholder image with text reading 200 width 200 height"/>
+          <!-- Caption located on the bottom of the image -->
           <figcaption>Student Image</figcaption>
         </figure>
+        <!-- Paragraph classed as highlighted text from style.css; creating the font weight bolder-->
         <p class="highlighted-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
       </section>
-
+      
+      <!-- This section will have a different background due to "id=contact-section" pulling from style.css -->
       <section id="contact-section">
         <h2>Contact Information</h2>
+        <!-- Creates an bullet point list (ul) with font weight bolder-->
         <ul class="highlighted-text">
+          <!-- a list that has been bolder due to "class="highligted-text"" linked to the style.css -->
+          <!-- The a href will create a hyperlink that can be clicked; takes you to where it is specified -->
           <li>Email: <a href="#">someplace@gmail.com</a></li>
           <li>GitHub: <a href="#">sampleName</a></li>
           <li>Portfolio: <a href="#">coming soon</a></li>
@@ -34,6 +46,8 @@
     </main>
 
     <footer>
+      <!-- A paragraph of the footer -->
+      <!-- This footer will contain a specified height, width, line-height, text and background color similar to the header -->
       <p>© 2022 Student Bio Productions</p>
     </footer>
   </body>
